@@ -1,2 +1,4 @@
-# Portfolio-Website
- Following a tutorial and will eventually adapt to my own
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+

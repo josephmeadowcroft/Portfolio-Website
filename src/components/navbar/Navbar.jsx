@@ -1,11 +1,10 @@
-import { Sidebar } from "../sidebar/Sidebar";
+import Sidebar from "../sidebar/Sidebar";
 import "./navbar.scss";
 import { motion } from "framer-motion";
 
-export const Navbar = () => {
+const Navbar = () => {
   return (
     <div className="navbar">
-      {/* Sidebar */}
       <Sidebar />
       <div className="wrapper">
         <motion.span
@@ -33,3 +32,5 @@ export const Navbar = () => {
     </div>
   );
 };
+
+export default Navbar;

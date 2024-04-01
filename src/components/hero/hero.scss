@@ -48,29 +48,25 @@
   }
 
   .dragArea {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     width: 50%;
-    height: 100%;
+    height: calc(100vh - 100px);
     overflow: hidden;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    perspective: 500px;
-    background: linear-gradient(180deg, #70f, #40f);
       
 
     .item {
-      width: 150px;
-      height: 150px;
+      width: 300px;
+      height: 300px;
+      right: 20%;
       background: white;
       border-radius: 30px;
-      display: flex;
-      place-content: center;
-      place-items: center;
       overflow: hidden;
     }
   }

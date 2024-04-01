@@ -49,7 +49,7 @@ const Hero = () => {
         >
           <motion.h2 variants={textVariants}>JOSEPH MEADOWCROFT</motion.h2>
           <motion.h1 variants={textVariants}>
-            Web developer and UI designer
+            Student and Aspiring Developer
           </motion.h1>
           <motion.div className="buttons" variants={textVariants}>
             <motion.button variants={textVariants}>
@@ -73,9 +73,9 @@ const Hero = () => {
       >
         Writer Content Creator Influencer
       </motion.div>
-      <div className="imageContainer">
+      {/* <div className="imageContainer">
         <img src="/hero.png" alt="" />
-      </div>
+  </div> */}
     </div>
   );
 };

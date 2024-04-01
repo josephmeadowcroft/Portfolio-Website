@@ -1,4 +1,5 @@
 import "./hero.scss";
+import { useRef } from "react";
 import { motion } from "framer-motion";
 
 const textVariants = {
@@ -38,6 +39,8 @@ const sliderVariants = {
 };
 
 const Hero = () => {
+  const constraintsRef = useRef(null);
+
   return (
     <div className="hero">
       <div className="wrapper">
@@ -73,9 +76,13 @@ const Hero = () => {
       >
         Writer Content Creator Influencer
       </motion.div>
-      {/* <div className="imageContainer">
-        <img src="/hero.png" alt="" />
-  </div> */}
+      <div className="dragArea" ref={constraintsRef}>
+        <motion.div
+          className="item"
+          drag
+          dragConstraints={constraintsRef}
+        ></motion.div>
+      </div>
     </div>
   );
 };

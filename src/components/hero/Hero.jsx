@@ -81,6 +81,12 @@ const Hero = () => {
           className="item"
           drag
           dragConstraints={constraintsRef}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{
+            scale: 0.8,
+            rotate: -90,
+            borderRadius: "100%",
+          }}
         ></motion.div>
       </div>
     </div>

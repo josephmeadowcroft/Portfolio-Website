@@ -76,11 +76,12 @@ const Hero = () => {
       >
         Writer Content Creator Influencer
       </motion.div>
-      <div className="dragArea" ref={constraintsRef}>
+      <div className="pictureArea">
         <motion.div
           className="item"
-          drag
-          dragConstraints={constraintsRef}
+          variants={textVariants}
+          initial={{ x: 500, opacity: 0 }}
+          animate={{ x: 0, opacity: 1, transition: { duration: 0.5 } }}
           whileHover={{ scale: 1.1 }}
           whileTap={{
             scale: 0.8,

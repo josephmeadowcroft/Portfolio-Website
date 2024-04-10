@@ -88,7 +88,9 @@ const Hero = () => {
             rotate: -90,
             borderRadius: "100%",
           }}
-        ></motion.div>
+        >
+          <img src="hero.PNG" alt="hero_picture" />
+        </motion.div>
       </div>
     </div>
   );

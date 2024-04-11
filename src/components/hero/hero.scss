@@ -64,7 +64,7 @@
     .item {
       width: 350px;
       height: auto;
-      background: white;
+      background: none;
       border-radius: 30px;
       overflow: hidden;
 
@@ -73,16 +73,5 @@
         width: 100%;
       }
     }
-  }
-
-  .slidingTextContainer {
-    position: absolute;
-    font-size: 50vh;
-    bottom: -120px;
-    white-space: nowrap;
-    color: #ffffff09;
-    cursor: default;
-    width: 50%;
-    font-weight: bold;
   }
 }

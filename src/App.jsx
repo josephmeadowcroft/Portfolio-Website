@@ -7,7 +7,7 @@ import Contact from "./components/contact/Contact";
 const App = () => {
   return (
     <div>
-      <section id="Homepage">
+      <section id="Home">
         <Navbar />
         <Hero />
       </section>

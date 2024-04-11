@@ -24,19 +24,6 @@ const textVariants = {
     },
   },
 };
-const sliderVariants = {
-  initial: {
-    x: 0,
-  },
-  animate: {
-    x: "-220%",
-    transition: {
-      repeat: Infinity,
-      repeatType: "mirror",
-      duration: 20,
-    },
-  },
-};
 
 const Hero = () => {
   const constraintsRef = useRef(null);
@@ -68,14 +55,6 @@ const Hero = () => {
           />
         </motion.div>
       </div>
-      <motion.div
-        className="slidingTextContainer"
-        variants={sliderVariants}
-        initial="initial"
-        animate="animate"
-      >
-        Writer Content Creator Influencer
-      </motion.div>
       <div className="pictureArea">
         <motion.div
           className="item"
@@ -84,12 +63,10 @@ const Hero = () => {
           animate={{ x: 0, opacity: 1, transition: { duration: 0.5 } }}
           whileHover={{ scale: 1.1 }}
           whileTap={{
-            scale: 0.8,
-            rotate: -90,
-            borderRadius: "100%",
+            scale: 0.9,
           }}
         >
-          <img src="hero.PNG" alt="hero_picture" />
+          <img src="hero.PNG" alt="hero_picture" draggable={false} />
         </motion.div>
       </div>
     </div>

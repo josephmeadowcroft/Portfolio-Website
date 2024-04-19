@@ -54,20 +54,7 @@ const Hero = () => {
             alt=""
           />
         </motion.div>
-      </div>
-      <div className="pictureArea">
-        <motion.div
-          className="item"
-          variants={textVariants}
-          initial={{ x: 500, opacity: 0 }}
-          animate={{ x: 0, opacity: 1, transition: { duration: 0.5 } }}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{
-            scale: 0.9,
-          }}
-        >
-          <img src="hero.PNG" alt="hero_picture" draggable={false} />
-        </motion.div>
+        <div className="item"></div>
       </div>
     </div>
   );

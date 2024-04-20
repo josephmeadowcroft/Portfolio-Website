@@ -42,10 +42,13 @@ const Hero = () => {
             Student and Aspiring Developer
           </motion.h1>
           <motion.div className="buttons" variants={textVariants}>
-            <motion.button variants={textVariants}>
-              See my latest projects
+            <motion.button variants={textVariants}>Projects</motion.button>
+            <motion.button
+              variants={textVariants}
+              style={{ backgroundColor: "white", color: "black" }}
+            >
+              Contact Me
             </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}

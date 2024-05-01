@@ -1,3 +1,5 @@
+@import '../../app.scss';
+
 .hero {
   height: calc(100vh - 100px);
   overflow: hidden;
@@ -14,6 +16,10 @@
     justify-content: center;
     align-items: center;
 
+    @include mobile {
+      flex-direction: column;
+    }
+
     .textContainer {
       width: 60%;
       height: 100%;
@@ -22,6 +28,15 @@
       justify-content: center;
       gap: 40px;
       margin-left: 20px;
+      order: 1;
+
+      @include mobile {
+        height: 50%;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+      }
 
       h2 {
         font-size: 30px;
@@ -31,6 +46,10 @@
 
       h1 {
         font-size: 4rem;
+
+        @include mobile {
+          font-size: 2rem;
+        }
       }
 
       .buttons {
@@ -48,6 +67,10 @@
 
       img {
         width: 50px;
+
+        @include mobile {
+          display: none;
+        }
       }
     }
   }
@@ -57,6 +80,7 @@
   .item {
     background-image: url("public/hero.PNG");
     background-color: rgb(134, 134, 134);
+    order: 2;
     width: 25rem;
     height: 25rem;
     background-size: 85%;
@@ -79,6 +103,12 @@
       100% {
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
       }
+    }
+
+    @include mobile {
+      height: 15rem;
+      width: 15rem;
+      order: 0;
     }
   }
 }
